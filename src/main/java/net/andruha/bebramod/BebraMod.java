@@ -1,6 +1,9 @@
 package net.andruha.bebramod;
 
 import com.mojang.logging.LogUtils;
+import net.andruha.bebramod.item.ModCreativeModTabs;
+import net.andruha.bebramod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -28,6 +31,10 @@ public class BebraMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+
+        ModCreativeModTabs.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -44,7 +51,10 @@ public class BebraMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+             event.accept(ModItems.BEBRA);
+             event.accept(ModItems.MEGA_BEBRA);
+         }
 
     }
 
