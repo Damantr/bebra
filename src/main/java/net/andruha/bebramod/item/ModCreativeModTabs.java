@@ -1,6 +1,7 @@
 package net.andruha.bebramod.item;
 
 import net.andruha.bebramod.BebraMod;
+import net.andruha.bebramod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,7 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.BEBRA.get());
                         pOutput.accept(ModItems.MEGA_BEBRA.get());
+                        pOutput.accept(ModBlocks.BEBRA_BLOCK.get());
                     })
                     .build());
 
