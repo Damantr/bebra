@@ -1,6 +1,7 @@
 package net.andruha.bebramod;
 
 import com.mojang.logging.LogUtils;
+import net.andruha.bebramod.block.ModBlocks;
 import net.andruha.bebramod.item.ModCreativeModTabs;
 import net.andruha.bebramod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,8 @@ public class BebraMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         ModCreativeModTabs.register(modEventBus);
 
