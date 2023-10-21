@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2,
+  "group": "bebra",
+  "ingredient": {
+    "item": "bebramod:bebra"
+  },
+  "result": "bebramod:mega_bebra"
+}

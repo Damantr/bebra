@@ -21,6 +21,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.BEBRA.get());
                         pOutput.accept(ModItems.MEGA_BEBRA.get());
                         pOutput.accept(ModBlocks.BEBRA_BLOCK.get());
+                        pOutput.accept(ModBlocks.BEBRUN_BLOCK.get());
                     })
                     .build());
 
