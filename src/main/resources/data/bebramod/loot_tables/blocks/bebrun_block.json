@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bebramod:bebra_block"
+          "name": "bebramod:bebrun_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "bebramod:bebra_block"
+  "random_sequence": "bebramod:bebrun_block"
 }
