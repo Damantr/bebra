@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bebramod:block/sound_block"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 {
   "values": [
     "bebramod:bebra_block",
-    "bebramod:bebrun_block"
+    "bebramod:bebrun_block",
+    "bebramod:bebra_ore"
   ]
 }
