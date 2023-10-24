@@ -31,6 +31,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.I.get());
                         pOutput.accept(ModBlocks.S.get());
                         pOutput.accept(ModItems.TRUE_BREAD.get());
+                        pOutput.accept(ModItems.OIL.get());
 
                     })
                     .build());
