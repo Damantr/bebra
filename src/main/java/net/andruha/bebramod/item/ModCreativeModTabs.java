@@ -22,6 +22,17 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.MEGA_BEBRA.get());
                         pOutput.accept(ModBlocks.BEBRA_BLOCK.get());
                         pOutput.accept(ModBlocks.BEBRUN_BLOCK.get());
+                        pOutput.accept(ModBlocks.BEBRA_ORE.get());
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+                        pOutput.accept(ModBlocks.BLACKBG.get());
+                        pOutput.accept(ModBlocks.A.get());
+                        pOutput.accept(ModBlocks.D.get());
+                        pOutput.accept(ModBlocks.I.get());
+                        pOutput.accept(ModBlocks.S.get());
+                        pOutput.accept(ModItems.TRUE_BREAD.get());
+                        pOutput.accept(ModItems.OIL.get());
+
                     })
                     .build());
 

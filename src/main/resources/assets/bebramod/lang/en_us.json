@@ -3,5 +3,16 @@
   "item.bebramod.mega_bebra": "MEGA bebra",
   "creativetab.bebra_tab": "Bebriki",
   "block.bebramod.bebra_block": "Bebrun block",
-  "block.bebramod.bebrun_block": "TRUE bebra"
+  "block.bebramod.bebrun_block": "TRUE bebra",
+  "block.bebramod.bebra_ore": "Bebra ore",
+  "item.bebramod.metal_detector": "Detector govna",
+  "block.bebramod.sound_block": "Abibas",
+  "block.bebramod.a": "a",
+  "block.bebramod.d": "d",
+  "block.bebramod.i": "i",
+  "block.bebramod.s": "s",
+  "block.bebramod.blackbg": "black background",
+  "item.bebramod.true_bread": "CHLEBB",
+  "item.bebramod.oil": "Yan Toplivo",
+  "tooltip.bebramod.metal_detector_tooltip": "Zaebis item"
 }
