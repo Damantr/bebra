@@ -1,6 +1,8 @@
 package net.andruha.bebramod.item;
 
 import net.andruha.bebramod.BebraMod;
+import net.andruha.bebramod.item.custom.FuelItem;
+import net.andruha.bebramod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,6 +16,12 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MEGA_BEBRA = ITEMS.register("mega_bebra",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(100)));
+    public static final RegistryObject<Item> TRUE_BREAD = ITEMS.register("true_bread",
+            () -> new Item(new Item.Properties().food(ModFoods.TRUE_BREAD)));
+    public static final RegistryObject<Item> OIL = ITEMS.register("oil",
+            () -> new FuelItem(new Item.Properties(), 300));
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
