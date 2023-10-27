@@ -32,7 +32,16 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.S.get());
                         pOutput.accept(ModItems.TRUE_BREAD.get());
                         pOutput.accept(ModItems.OIL.get());
-
+                        pOutput.accept(ModBlocks.BEBRA_DOOR.get());
+                        pOutput.accept(ModBlocks.BEBRA_WALL.get());
+                        pOutput.accept(ModBlocks.BEBRA_SLAB.get());
+                        pOutput.accept(ModBlocks.BEBRA_FENCE.get());
+                        pOutput.accept(ModBlocks.BEBRA_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.BEBRA_BUTTON.get());
+                        pOutput.accept(ModBlocks.BEBRA_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.BEBRA_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.BEBRA_STAIRS.get());
+                        pOutput.accept(ModItems.SWORD.get());
                     })
                     .build());
 

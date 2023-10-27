@@ -36,6 +36,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.BEBRA_BLOCK.get());
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.BEBRUN_BLOCK.get());
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.BEBRA_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.BEBRA_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.BEBRA_WALL.get());
 
     }
 }

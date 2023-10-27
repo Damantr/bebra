@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "bebramod:item/sword_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "bebramod:item/sword_3d"
+    },
+    "ground": {
+      "parent": "bebramod:item/sword_3d"
+    },
+    "fixed": {
+      "parent": "bebramod:item/sword_3d"
+    }
+  }
+}

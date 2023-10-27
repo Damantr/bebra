@@ -3,14 +3,14 @@ package net.andruha.bebramod.block;
 import net.andruha.bebramod.BebraMod;
 import net.andruha.bebramod.block.сustom.SoundBlock;
 import net.andruha.bebramod.item.ModItems;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -44,6 +44,35 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> S = registerBlock("s",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).sound(SoundType.ANVIL).noLootTable()));
+    public static final RegistryObject<Block> BEBRA_STAIRS = registerBlock("bebra_stairs",
+            () -> new StairBlock(() -> ModBlocks.BEBRA_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> BEBRA_SLAB = registerBlock("bebra_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> BEBRA_BUTTON = registerBlock("bebra_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_BUTTON).sound(SoundType.AMETHYST),
+                    BlockSetType.IRON, 10, true));
+
+    public static final RegistryObject<Block> BEBRA_PRESSURE_PLATE = registerBlock("bebra_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST),
+                    BlockSetType.IRON));
+
+    public static final RegistryObject<Block> BEBRA_FENCE = registerBlock("bebra_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> BEBRA_FENCE_GATE = registerBlock("bebra_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST), SoundEvents.FIREWORK_ROCKET_BLAST, SoundEvents.FIREWORK_ROCKET_TWINKLE));
+
+    public static final RegistryObject<Block> BEBRA_WALL = registerBlock("bebra_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> BEBRA_DOOR = registerBlock("bebra_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON));
+
+    public static final RegistryObject<Block> BEBRA_TRAPDOOR = registerBlock("bebra_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON ));
+
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

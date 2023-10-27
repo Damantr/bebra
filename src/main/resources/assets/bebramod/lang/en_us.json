@@ -14,5 +14,15 @@
   "block.bebramod.blackbg": "black background",
   "item.bebramod.true_bread": "CHLEBB",
   "item.bebramod.oil": "Yan Toplivo",
-  "tooltip.bebramod.metal_detector_tooltip": "Zaebis item"
+  "tooltip.bebramod.metal_detector_tooltip": "Zaebis item",
+  "block.bebramod.bebra_stairs": "Bebra stairs",
+  "block.bebramod.bebra_slab": "Bebra slab",
+  "block.bebramod.bebra_button": "Bebra button",
+  "block.bebramod.bebra_pressure_plate": "Bebra Pressure plate",
+  "block.bebramod.bebra_fence": "Bebra fence",
+  "block.bebramod.bebra_fence_gate":"Bebra fence gate ",
+  "block.bebramod.bebra_wall": "Bebra wall",
+  "block.bebramod.bebra_door": "Bebra door",
+  "block.bebramod.bebra_trapdoor":"Bebra trapdoor",
+  "item.bebramod.sword": "Toplivo sword"
 }

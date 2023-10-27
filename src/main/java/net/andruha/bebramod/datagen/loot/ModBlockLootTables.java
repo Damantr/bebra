@@ -30,6 +30,20 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.BEBRUN_BLOCK.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
+        this.dropSelf(ModBlocks.BEBRA_STAIRS.get());
+        this.dropSelf(ModBlocks.BEBRA_BUTTON.get());
+        this.dropSelf(ModBlocks.BEBRA_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.BEBRA_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.BEBRA_FENCE.get());
+        this.dropSelf(ModBlocks.BEBRA_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.BEBRA_WALL.get());
+
+        this.add(ModBlocks.BEBRA_SLAB.get(),
+        block -> createSlabItemTable(ModBlocks.BEBRA_SLAB.get()));
+        this.add(ModBlocks.BEBRA_DOOR.get(),
+                block -> createDoorTable(ModBlocks.BEBRA_DOOR.get()));
+
+
         this.add(ModBlocks.BEBRA_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.BEBRA_ORE.get(), ModItems.BEBRA.get()));
 
