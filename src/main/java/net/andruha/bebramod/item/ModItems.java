@@ -3,8 +3,7 @@ package net.andruha.bebramod.item;
 import net.andruha.bebramod.BebraMod;
 import net.andruha.bebramod.item.custom.FuelItem;
 import net.andruha.bebramod.item.custom.MetalDetectorItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,7 +23,15 @@ public class ModItems {
     public static final RegistryObject<Item> OIL = ITEMS.register("oil",
             () -> new FuelItem(new Item.Properties(), 300));
     public static final RegistryObject<Item> SWORD = ITEMS.register("sword",
-            () -> new SwordItem(new Item.Properties().stacksTo(1)));
+            () -> new SwordItem(ModToolTiers.BEBRA, 8, 4, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BEBRA_PICKAXE = ITEMS.register("bebra_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.BEBRA, 4, 4, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BEBRA_AXE = ITEMS.register("bebra_axe",
+            () -> new AxeItem(ModToolTiers.BEBRA, 12, 6, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BEBRA_HOE = ITEMS.register("bebra_hoe",
+            () -> new HoeItem(ModToolTiers.BEBRA, 0, 0, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BEBRA_SHOVEL = ITEMS.register("bebra_shovel",
+            () -> new ShovelItem(ModToolTiers.BEBRA, 0, 0, new Item.Properties().stacksTo(1)));
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -42,6 +42,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.BEBRA_TRAPDOOR.get());
                         pOutput.accept(ModBlocks.BEBRA_STAIRS.get());
                         pOutput.accept(ModItems.SWORD.get());
+                        pOutput.accept(ModItems.BEBRA_AXE.get());
+                        pOutput.accept(ModItems.BEBRA_PICKAXE.get());
+                        pOutput.accept(ModItems.BEBRA_SHOVEL.get());
+                        pOutput.accept(ModItems.BEBRA_HOE.get());
+
                     })
                     .build());
 

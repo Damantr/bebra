@@ -24,5 +24,10 @@
   "block.bebramod.bebra_wall": "Bebra wall",
   "block.bebramod.bebra_door": "Bebra door",
   "block.bebramod.bebra_trapdoor":"Bebra trapdoor",
-  "item.bebramod.sword": "Toplivo sword"
+  "item.bebramod.sword": "Toplivo sword",
+  "item.bebramod.bebra_pickaxe": "Bebra pickaxe",
+  "item.bebramod.bebra_axe": "Bebra axe",
+  "item.bebramod.bebra_hoe": "Bebra hoe",
+  "item.bebramod.bebra_shovel": "Bebra shovel"
+
 }

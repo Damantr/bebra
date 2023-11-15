@@ -37,6 +37,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.BEBRA_FENCE_GATE);
 
         trapdoorItem(ModBlocks.BEBRA_TRAPDOOR);
+        handeheldItem(ModItems.BEBRA_AXE);
+        handeheldItem(ModItems.BEBRA_PICKAXE);
+        handeheldItem(ModItems.BEBRA_SHOVEL);
+        handeheldItem(ModItems.BEBRA_HOE);
+
+
     }
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
@@ -72,5 +78,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(BebraMod.MODID,"item/" + item.getId().getPath()));
+    }
+    private ItemModelBuilder handeheldItem(RegistryObject<Item> item){
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(BebraMod.MODID, "item/" + item.getId().getPath()));
+
     }
 }

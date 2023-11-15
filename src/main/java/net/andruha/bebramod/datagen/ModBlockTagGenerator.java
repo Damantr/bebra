@@ -9,6 +9,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -42,6 +43,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.BEBRA_FENCE_GATE.get());
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.BEBRA_WALL.get());
+        this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)
+                .add(ModBlocks.BEBRUN_BLOCK.get());
 
     }
 }
