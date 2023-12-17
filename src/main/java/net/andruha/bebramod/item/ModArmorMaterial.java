@@ -32,22 +32,22 @@ public enum ModArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
-        return 0;
+        return BASE_DURABILITY[pType.ordinal()] * this.durabilityMultiplier;
     }
 
     @Override
     public int getDefenseForType(ArmorItem.Type pType) {
-        return 0;
+        return this.protectionAmounts[pType.ordinal()];
     }
 
     @Override
     public int getEnchantmentValue() {
-        return 0;
+        return enchantmentValue;
     }
 
     @Override
     public SoundEvent getEquipSound() {
-        return null;
+        return this.eqipSound;
     }
 
     @Override
